@@ -18,13 +18,20 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            display: flex;
         }
+
+        nav {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 4; /* 80% width */
+            padding: 20px;
+        }
+
         h1 {
             font-size: 36px;
         }
@@ -34,18 +41,19 @@
         }
     </style>
 </head>
-<header>
-    <h1>Yuchen Wang</h1>
-    <p>Welcome to My Personal Page</p>
-</header>
 <body>
-    <div style="float: left; width: 20%;">
-        <ul>
-            <li><a href="pubs.html">Publications</a></li>
-            <!-- Add more links if needed -->
-        </ul>
-    </div>   
-    <div style="float: left; width: 80%;">
+    <header>
+        <h1>Yuchen Wang</h1>
+        <p>Welcome to My Personal Page</p>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="pubs.html">Publications</a></li>
+                <!-- Add more links if needed -->
+            </ul>
+        </nav>
+        
         <div class="container">
             <h2>About Me</h2>
             <p>
