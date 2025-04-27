@@ -1,81 +1,159 @@
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    font-size: clamp(1rem, 0.95rem + 0.2vw, 1.15rem);
+    line-height: 1.55;
 }
+
 header {
     background-color: #68ACE5;
-    color: #fff;
+    color: white;
+    padding: clamp(0.8rem, 1.2vw, 1.2rem) clamp(1rem, 2.5vw, 2.5rem);
+    flex-shrink: 0;
     text-align: center;
-    padding: 20px;
 }
+
+header h1 {
+    margin: 0 0 0.4rem 0;
+    font-size: clamp(1.8rem, 1.4rem + 2.8vw, 3.5rem);
+    line-height: 1.2;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+    font-size: clamp(1rem, 0.85rem + 0.6vw, 1.4rem);
+    opacity: 0.9;
+}
+
 .container {
     display: flex;
+    flex-grow: 1;
+    width: 100%;
 }
 
-.content {
-    flex: 4; /* 80% width */
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 36px;
-}
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* Style for the navigation container */
 .nav-container {
-    width: 200px; /* Adjust width if needed */
-    margin-right: 20px; /* Space between the nav and content */
+    flex-basis: 200px;
+    flex-shrink: 0;
+    background-color: #e2e2e2;
+    padding: clamp(0.8rem, 1.2vw, 1.5rem);
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
-/* Style for the nav menu */
 .nav-container nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 20;
+    margin: 0;
 }
 
 .nav-container nav ul li {
-    margin-bottom: 15px;
+    margin-bottom: 0.6rem;
 }
 
-/* Style for the links */
 .nav-container nav ul li a {
-    display: block;
     text-decoration: none;
-    font-size: 18px;
-    color: #4a90e2;
-    font-family: 'Arial', sans-serif;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-/* Hover effect */
-.nav-container nav ul li a:hover {
-    background-color: #4a90e2;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #4a90e2;
-}
-
-/* Active link style */
-.nav-container nav ul li a.active {
-    background-color: #4a90e2;
-    color: white;
+    color: #333;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.25rem);
     font-weight: bold;
-    border: 2px solid #4a90e2;
+    transition: background-color 0.2s ease-in-out;
 }
 
+.nav-container nav ul li a:hover,
+.nav-container nav ul li a:focus {
+    background-color: #ccc;
+}
+
+.content {
+    flex-grow: 1;
+    padding: clamp(1.2rem, 2vw, 2.2rem);
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.content .section {
+    margin-bottom: 1.5rem;
+}
+
+.content p,
+.content li {
+    font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.5rem);
+    line-height: 1.6;
+    margin-bottom: 1.1em;
+}
+
+.content ul, .content ol {
+    padding-left: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        flex-basis: auto;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        overflow-y: visible;
+        text-align: center;
+    }
+
+    .nav-container nav ul li {
+        display: inline-block;
+        margin-right: 0.4rem;
+        margin-bottom: 0.4rem;
+        margin-left: 0.4rem;
+    }
+
+    .nav-container nav ul li a {
+        padding: 0.4rem 0.7rem;
+    }
+
+    .content {
+        padding: clamp(1rem, 3vw, 1.8rem);
+    }
+
+    header h1 {
+        font-size: clamp(1.7rem, 1.4rem + 3vw, 3rem);
+    }
+     header p {
+        font-size: clamp(0.95rem, 0.85rem + 0.8vw, 1.3rem);
+    }
+    .content p,
+    .content li {
+        font-size: clamp(1rem, 0.9rem + 0.8vw, 1.4rem);
+        line-height: 1.55;
+    }
+}
+
+.nav-container nav ul li.active {
+
+    border-left: 4px solid #68ACE5;
+
+}
+
+.nav-container nav ul li.active a {
+    font-weight: bolder;
+}
+
+.nav-container nav ul li.active:hover {
+    background-color: #c8c8c8; /* Slightly different hover for active */
+}
+
+.nav-container nav ul li.active a:hover {
+}
