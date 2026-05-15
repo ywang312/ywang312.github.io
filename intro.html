@@ -6,24 +6,28 @@
     <title>Yuchen Wang - Personal Introduction</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-intro">
     <header>
-        <h1>Yuchen Wang</h1>
-        <p>Welcome to My Personal Page</p>
+        <div class="header-inner">
+            <p class="eyebrow">About Me</p>
+            <h1>Yuchen Wang</h1>
+            <p>A short path from Hubei to Chicago</p>
+        </div>
     </header>
     <div class="container">
         <div class="nav-container">
-            <nav>
+            <nav aria-label="Primary">
                 <ul>
 		    <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="intro.html">About me</a></li>
                     <li><a href="research.html">Research</a></li>
+                    <li><a href="opensource.html">Open Source</a></li>
                     <li><a href="pubs.html">Publications</a></li>
                 </ul>
             </nav>
         </div>
         
-        <div class="content">
+        <main class="content">
             <div class="section">
                 <h2>My life in China</h2>
                 <p>
@@ -34,6 +38,14 @@
 		    From 2012 to 2016, I spent my  undergraduate at University of Science and Technology of China (USTC) in the nearby province Anhui.
 		    I obtained my Bachelor of Science in Chemical Physics, a interdisciplinary degree where I studied both physics and chemistry.
 		</p>
+                <div class="map-embed compact-map" aria-label="Map showing Huanggang, Hubei, China">
+                    <iframe
+                        title="Huanggang, Hubei, China"
+                        src="https://www.google.com/maps?q=Huanggang,%20Hubei,%20China&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
 	    </div>
 
 	    <div class="section">
@@ -52,9 +64,12 @@
 		            I have a cat named KitKat. I watch anime. I don't code in Fortran unless I have to.
                 </p>
             </div>
-            
 
+        </main>
     </div>
-    
+    <footer>
+        <p>Yuchen Wang, University of Chicago.</p>
+        <p class="credit">Page design and updates powered by Codex using GPT-5.</p>
+    </footer>
 </body>
 </html>

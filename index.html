@@ -6,24 +6,37 @@
     <title>Yuchen Wang - Personal Introduction</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-home">
     <header>
-        <h1>Yuchen Wang</h1>
-        <p>Welcome to My Personal Page</p>
+        <div class="header-inner">
+            <p class="eyebrow">Academic Profile</p>
+            <h1>Yuchen Wang</h1>
+            <p>Many-body physics, chemical dynamics, and quantum computing</p>
+        </div>
     </header>
     <div class="container">
         <div class="nav-container">
-	    <nav>
+	    <nav aria-label="Primary">
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="intro.html">About me</a></li>
                     <li><a href="research.html">Research</a></li>
+                    <li><a href="opensource.html">Open Source</a></li>
                     <li><a href="pubs.html">Publications</a></li>
                 </ul>
             </nav>
         </div>
         
-        <div class="content">
+        <main class="content">
+            <section class="intro-panel">
+                <p class="section-label">Currently at the University of Chicago</p>
+                <h2>Chemistry, physics, and computation in one place.</h2>
+                <p>
+                    I am a postdoctoral fellow at the James Franck Institute, working at the intersection
+                    of theoretical chemistry and quantum science.
+                </p>
+            </section>
+
             <div class="section">
                 <p>
                     Welcome to my personal page stranger! 
@@ -41,9 +54,12 @@
 		    Email: yuchenwang0607@gmail.com (preferred), yuchenwang@uchicago.edu
                 </p>
             </div>
-            
 
+        </main>
     </div>
-    
+    <footer>
+        <p>Yuchen Wang, University of Chicago.</p>
+        <p class="credit">Page design and updates powered by Codex using GPT-5.</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuchen Wang - Open Source</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-opensource">
+    <header>
+        <div class="header-inner">
+            <p class="eyebrow">Open Source</p>
+            <h1>Yuchen Wang</h1>
+            <p>Scientific software, reproducible workflows, and community tools</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="nav-container">
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">About me</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li class="active"><a href="opensource.html">Open Source</a></li>
+                    <li><a href="pubs.html">Publications</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="content">
+            <div class="section">
+                <h2>Open-source contributions</h2>
+                <p>
+                    I view open scientific software as an essential part of reproducible research. Whenever possible,
+                    I advocate for publishing the code, data, and computational workflows behind my papers so that
+                    other researchers can inspect the implementation, reproduce the calculations, and build on the
+                    methods rather than treating them as black boxes.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Paper repositories</h2>
+                <p>
+                    Several of my recent quantum chemistry and quantum computing papers have companion repositories
+                    under the Mazziotti group GitHub organization. These repositories collect notebooks, scripts,
+                    Maple worksheets, Mathematica files, or Python workflows associated with the published methods.
+                </p>
+                <ul class="project-list">
+                    <li>
+                        <a href="https://github.com/damazz/CorrelatedPurification" target="_blank" rel="noopener noreferrer">CorrelatedPurification</a>
+                        provides Maple code for restoring N-representability in quantum simulation through correlated
+                        purification constraints.
+                    </li>
+                    <li>
+                        <a href="https://github.com/damazz/ConstrainedShadowTomography" target="_blank" rel="noopener noreferrer">ConstrainedShadowTomography</a>
+                        contains data and Maple code for constrained shadow tomography in molecular simulation on
+                        quantum devices.
+                    </li>
+                    <li>
+                        <a href="https://github.com/damazz/ML-CQE" target="_blank" rel="noopener noreferrer">ML-CQE</a>
+                        implements the reinforcement-learning contracted quantum eigensolver in a Jupyter notebook,
+                        connecting machine learning with compact quantum many-body ansatz construction.
+                    </li>
+                    <li>
+                        <a href="https://github.com/damazz/Polariton-CQE-Quantum-Computer" target="_blank" rel="noopener noreferrer">Polariton-CQE-Quantum-Computer</a>
+                        provides Python code for contracted-quantum-eigensolver simulations of polaritonic chemistry
+                        on quantum computers.
+                    </li>
+                    <li>
+                        <a href="https://github.com/damazz/Parallel-CQE" target="_blank" rel="noopener noreferrer">Parallel-CQE</a>
+                        shares Jupyter and Mathematica notebooks for the parallel contracted quantum eigensolver
+                        treatment of excited states.
+                    </li>
+                    <li>
+                        <a href="https://github.com/damazz/ExcitedState-CQE" target="_blank" rel="noopener noreferrer">ExcitedState-CQE</a>
+                        includes Maple and Jupyter materials for electronic excited states from the variance-based
+                        contracted quantum eigensolver.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Yarkony Group surfaces</h2>
+                <p>
+                    <a href="https://github.com/yarkonygrp/surfaces" target="_blank" rel="noopener noreferrer">yarkonygrp/surfaces</a>
+                    is an open repository for analytical coupled potential energy surfaces used in nonadiabatic
+                    dynamics. The project includes the <i>surfgen</i> program suite for fitting quasi-diabatic
+                    Hamiltonian matrices from ab initio energies, gradients, and derivative couplings, along with
+                    evaluation code and molecular examples such as methylamine, ammonia, phenol, hydroxymethyl,
+                    and OH<sub>3</sub>.
+                    <br><br>
+                    The software is designed to make expensive multireference electronic-structure information
+                    reusable in dynamics simulations: once fitted, the analytical surfaces can be evaluated quickly
+                    while preserving state couplings, conical-intersection structure, and molecular symmetry through
+                    projection-operator treatments.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Additional repositories</h2>
+                <p>
+                    More project notes will be added here as public code is organized. For a broader list, please
+                    check my <a href="https://github.com/ywang312" target="_blank" rel="noopener noreferrer">GitHub profile</a>.
+                </p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Yuchen Wang, University of Chicago.</p>
+        <p class="credit">Page design and updates powered by Codex using GPT-5.</p>
+    </footer>
+</body>
+</html>

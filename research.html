@@ -6,52 +6,94 @@
     <title>Yuchen Wang - Personal Introduction</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-research">
     <header>
-        <h1>Yuchen Wang</h1>
-        <p>Welcome to My Personal Page</p>
+        <div class="header-inner">
+            <p class="eyebrow">Research</p>
+            <h1>Yuchen Wang</h1>
+            <p>Selected themes across quantum chemistry and many-body theory</p>
+        </div>
     </header>
     <div class="container">
         <div class="nav-container">
-            <nav>
+            <nav aria-label="Primary">
                 <ul>
 		    <li><a href="index.html">Home</a></li>
                     <li><a href="intro.html">About me</a></li>
                     <li class="active"><a href="research.html">Research</a></li>
+                    <li><a href="opensource.html">Open Source</a></li>
 		    <li><a href="pubs.html">Publications</a></li>
                 </ul>
             </nav>
         </div>
         
-        <div class="content">
+        <main class="content">
 	    <div class="section">
-                <h2>1.Diabatic potential energy matrices<sup>1</sup></h2>
-                <p>
-		    We use diabatic potential energy matrices, a generalization of potential energy surfaces, to study nonadiabatic chemistry. I spent times in Prof. Yarkony's group which is known for making probably the most dedicated potential energy matrices from derivative coupling diabatization. My recent focus is on the application of artificial neural networks and the extension to dipoles and spin-orbit couplings.
-                </p>
-            </div>
-	    <div class="section">
-                <h2>2.Spin-orbit coupling induced dynamics<sup>2</sup></h2>
-                <p>
-   		    We have successfully constructed the spin-orbit coupling matrix elements from relativistic electronic structure theory. The spin-orbit coupling forms the spin-orbit conical intersection (SOCI). However, due to the fine-splitting of near degenerate states, the SOCI are not exactly a replica of conical intersection. Instead they present unique topography for spin-polarization simulations.
-                </p>
-                <h2>3.Reduced density matrix theory</h2>
-                <p>
-		    Coulson's challenge discussed the possibility of using reduced density matrix to replace the traditional wavefunction methods. For molecular systems the energy is a linear function of two-particle reduced density matrix. The major challenge is the N-representability, which constrains the set of reduced density matrix to represent a realistic N-particle system.
-                </p>
-                <h2>4.Quantum computers for quantum chemistry</h2>
+                <h2>1. Quantum computers for quantum chemistry</h2>
                 <p>
 		    Quantum computers presents unique opportunities for chemical simulations. From electronic structure to machine learning potential to quantum dynamics, we explore the possibility of "quantum advantage". Special link between quantum state tomography and reduced density matrix is the focus at this point.
                 </p>
+                <p class="section-label">Selected papers</p>
+                <ol class="paper-list">
+                    <li>Warren, S.; Wang, Y.; Benavides-Riveros, C. L.; Mazziotti, D. A. <a href="https://doi.org/10.1088/2058-9565/ad9fa5" target="_blank" rel="noopener noreferrer">Quantum algorithm for polaritonic chemistry based on an exact ansatz</a>. <i>Quantum Sci. Technol.</i> 2025, <b>10</b>, 02LT02.</li>
+                    <li>Wang, Y.; Cianci, C.; Avdic, I.; Dutta, R.; Warren, S.; Allen, B.; Vu, N. P.; Santos, L. F.; Batista, V. S.; Mazziotti, D. A. <a href="https://pubmed.ncbi.nlm.nih.gov/39873654/" target="_blank" rel="noopener noreferrer">Characterizing conical intersections of nucleobases on quantum computers</a>. <i>J. Chem. Theory Comput.</i> 2025, <b>21</b>, 1213-1221.</li>
+                    <li>Warren, S.; Wang, Y.; Benavides-Riveros, C. L.; Mazziotti, D. A. <a href="https://doi.org/10.1103/PhysRevLett.133.080202" target="_blank" rel="noopener noreferrer">Exact ansatz of fermion-boson systems for a quantum device</a>. <i>Phys. Rev. Lett.</i> 2024, <b>133</b>, 080202.</li>
+                    <li>Wang, Y.; Mazziotti, D. A. <a href="https://pubmed.ncbi.nlm.nih.gov/38587679/" target="_blank" rel="noopener noreferrer">Quantum simulation of conical intersections</a>. <i>Phys. Chem. Chem. Phys.</i> 2024, <b>26</b>, 11491-11497.</li>
+                    <li>Wang, Y.; Sager-Smith, L. M.; Mazziotti, D. A. <a href="https://doi.org/10.1088/1367-2630/acf9c3" target="_blank" rel="noopener noreferrer">Quantum simulation of bosons with the contracted quantum eigensolver</a>. <i>New J. Phys.</i> 2023, <b>25</b>, 103005.</li>
+                </ol>
             </div>
-	    References:
-            <br>
-            1.Wang, Y.; Xie, C.; Guo, H.; Yarkony, D. R. A quasi-diabatic representation of the 1,2<sup>1</sup>A states of methylamine, J. Phys. Chem. A 2019, 123, 5231−5241
-	    <br>
-	    2.Wang, Y.; Guan, Y; Guo, H.; Yarkony, D. R. Enabling complete multichannel nonadiabatic dynamics: A global representation of the two-channel coupled, 1, 2<sup>1</sup>A and 1<sup>3</sup>A states of NH<sub>3</sub> using neural networks, J. Chem. Phys. 2022, 154, 094121	
-	</div>
-
+	    <div class="section">
+                <h2>2. Machine learning for quantum many-body simulation</h2>
+                <p>
+		    Machine learning provides a route to compress the otherwise rapidly growing circuit representations needed for quantum many-body simulations. In my reinforcement-learning work, the contracted Schrodinger equation update is formulated as a Markov decision process, allowing an agent to choose compact exponential-Ansatz circuit operations from the current residual while retaining high accuracy across molecular geometries.
+                </p>
+                <p class="section-label">Selected papers</p>
+                <ol class="paper-list">
+                    <li>Wang, Y.; Avdic, I.; Mazziotti, D. A. <a href="https://journals.aps.org/pra/abstract/10.1103/1nml-xjqw" target="_blank" rel="noopener noreferrer">Shadow ansatz for the many-fermion wave function in scalable molecular simulations on quantum computing devices</a>. <i>Phys. Rev. A</i> 2025, <b>112</b>, 022432.</li>
+                    <li>Wang, Y.; Mazziotti, D. A. <a href="https://journals.aps.org/pra/abstract/10.1103/hrgr-klw3" target="_blank" rel="noopener noreferrer">Quantum many-body simulations from a reinforcement-learned exponential Ansatz</a>. <i>Phys. Rev. A</i> 2025, <b>112</b>, 022403.</li>
+                </ol>
+            </div>
+	    <div class="section">
+                <h2>3. Mathematical programming in chemistry</h2>
+                <p>
+		    Mathematical programming offers a way to turn chemical structure and many-body physics into constrained optimization problems. In reduced density matrix theory, for example, molecular energies can be optimized directly over two-particle reduced density matrices, while N-representability conditions impose semidefinite and related constraints that keep the solution physically meaningful.
+                </p>
+                <p class="section-label">Selected papers</p>
+                <ol class="paper-list">
+                    <li>Wang, Y.; Avdic, I.; Rose, M.; Payne Torres, L. I.; Schouten, A. O.; Sung, K. J.; Mazziotti, D. A. <a href="https://doi.org/10.1103/hwhj-b9cq" target="_blank" rel="noopener noreferrer">Correlated purification for restoring N-representability in quantum simulation</a>. <i>Phys. Rev. A</i> 2026, <b>113</b>.</li>
+                    <li>Wang, Y.; Mazziotti, D. A. <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.108.022814" target="_blank" rel="noopener noreferrer">Electronic excited states from a variance-based contracted quantum eigensolver</a>. <i>Phys. Rev. A</i> 2023, <b>108</b>, 022814.</li>
+                    <li>Avdic, I.; Wang, Y.; Rose, M.; Payne Torres, L. I.; Schouten, A. O.; Sung, K. J.; Mazziotti, D. A. <a href="https://pubs.rsc.org/en/content/articlehtml/2026/sc/d5sc09162d" target="_blank" rel="noopener noreferrer">Constrained shadow tomography for molecular simulation on quantum devices</a>. <i>Chem. Sci.</i> 2026, advance article.</li>
+                </ol>
+            </div>
+	    <div class="section">
+                <h2>4. Spin-orbit coupling induced dynamics</h2>
+                <p>
+   		    We have successfully constructed the spin-orbit coupling matrix elements from relativistic electronic structure theory. The spin-orbit coupling forms the spin-orbit conical intersection (SOCI). However, due to the fine-splitting of near degenerate states, the SOCI are not exactly a replica of conical intersection. Instead they present unique topography for spin-polarization simulations.
+                </p>
+                <p class="section-label">Selected papers</p>
+                <ol class="paper-list">
+                    <li>Wang, Y.; Yarkony, D. R. <a href="https://pubmed.ncbi.nlm.nih.gov/34742185/" target="_blank" rel="noopener noreferrer">Conical intersection seams in spin-orbit coupled systems with an even number of electrons: A numerical study based on neural network fit surfaces</a>. <i>J. Chem. Phys.</i> 2021, <b>155</b>, 174115.</li>
+                    <li>Wang, Y.; Guo, H.; Yarkony, D. R. <a href="https://pubs.rsc.org/en/content/articlelanding/2022/cp/d2cp01271e" target="_blank" rel="noopener noreferrer">Internal conversion and intersystem crossing dynamics based on coupled potential energy surfaces with full geometry-dependent spin-orbit and derivative couplings. Nonadiabatic photodissociation dynamics of NH<sub>3</sub>(A) leading to the NH(X<sup>3</sup>&Sigma;<sup>&minus;</sup>, a<sup>1</sup>&Delta;) + H<sub>2</sub> channel</a>. <i>Phys. Chem. Chem. Phys.</i> 2022, <b>24</b>, 15060-15067.</li>
+                </ol>
+            </div>
+	    <div class="section">
+                <h2>5. Diabatic potential energy matrices</h2>
+                <p>
+		    We use diabatic potential energy matrices, a generalization of potential energy surfaces, to study nonadiabatic chemistry. I spent times in Prof. Yarkony's group which is known for making probably the most dedicated potential energy matrices from derivative coupling diabatization. My recent focus is on the application of artificial neural networks and the extension to dipoles and spin-orbit couplings.
+                </p>
+                <p class="section-label">Selected papers</p>
+                <ol class="paper-list">
+                    <li>Wang, Y.; Xie, C.; Guo, H.; Yarkony, D. R. <a href="https://pubmed.ncbi.nlm.nih.gov/31141362/" target="_blank" rel="noopener noreferrer">A quasi-diabatic representation of the 1,2<sup>1</sup>A states of methylamine</a>. <i>J. Phys. Chem. A</i> 2019, <b>123</b>, 5231-5241.</li>
+                    <li>Wang, Y.; Guan, Y.; Yarkony, D. R. <a href="https://pubmed.ncbi.nlm.nih.gov/31617721/" target="_blank" rel="noopener noreferrer">On the impact of singularities in the two-state adiabatic to diabatic state transformation: A global treatment</a>. <i>J. Phys. Chem. A</i> 2019, <b>123</b>, 9874-9880.</li>
+                    <li>Wang, Y.; Guan, Y.; Guo, H.; Yarkony, D. R. <a href="https://pubmed.ncbi.nlm.nih.gov/33685133/" target="_blank" rel="noopener noreferrer">Enabling complete multichannel nonadiabatic dynamics: A global representation of the two-channel coupled, 1,2<sup>1</sup>A and 1<sup>3</sup>A states of NH<sub>3</sub> using neural networks</a>. <i>J. Chem. Phys.</i> 2021, <b>154</b>, 094121.</li>
+                    <li>Avanessian, C.; Wang, Y.; Yarkony, D. R. <a href="https://pubmed.ncbi.nlm.nih.gov/39303099/" target="_blank" rel="noopener noreferrer">Floquet-engineered photodissociation simulated using coupled potential energy and dipole matrices</a>. <i>J. Phys. Chem. Lett.</i> 2024, <b>15</b>, 9905-9911.</li>
+                </ol>
+            </div>
+	</main>
     </div>
-    
+    <footer>
+        <p>Yuchen Wang, University of Chicago.</p>
+        <p class="credit">Page design and updates powered by Codex using GPT-5.</p>
+    </footer>
 </body>
 </html>
